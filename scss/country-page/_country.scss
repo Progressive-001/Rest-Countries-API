@@ -1,0 +1,166 @@
+.countryDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  margin: 100px auto;  
+  width: 90%;
+  max-width: 1200px;  
+}
+
+.backButton {
+  height: 35px;
+  width: 140px;
+  padding: 10px;
+  background-color: $whiteColor;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 5px;
+}
+
+.countryDetails-1 {
+  @include flex(row, start, start);
+  gap: 60px;
+  width: 100%;
+}
+
+#borderCountries a {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  background-color: $whiteColor;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.border-link:hover {
+  background-color: #bbb;
+}
+
+p {
+  margin-bottom: 10px;
+  color: $Very-DarkBlue;
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.countryCombine {
+  @include flex(row, flex-start, space-between);
+  gap: 5rem;
+  margin-top: 20px;
+}
+
+.border {
+  margin-top: 40px;
+}
+
+#countryFlag {
+  @include flex(row, center, center);
+  height: 20rem;
+  width: 500px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.countryDetail-1,
+.countryDetail-2 {
+  width: 100%;
+  max-width: 250px;
+}
+
+
+@include mobile-only-1 {
+
+  .countryDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin: 100px auto;  /* centers it */
+    width: 90%;
+    max-width: 1200px;  /* controls the max width */
+    // align-items: center;
+    justify-content: center;
+  }
+
+  .countryCombine {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .countryDetails-1 {
+    @include flex(column, start, start);
+    gap: 30px;
+    width: 100%;
+  }
+
+  #countryFlag {
+    width: 100%;
+    max-width: 500px;   // maximum width on large screens
+    height: auto;
+    aspect-ratio: 16/10; // optional, ensures consistent ratio
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+
+  .backButton {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+
+  .countryDetail-2 {
+    width: 100%;
+  }
+
+  .countryDetails-1 {
+    gap: 30px;
+  }
+  
+
+  .border {
+    flex-direction: column;
+  }
+
+  #borderCountries a {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@include mobile-only-2 {
+ .countryDetails-1 {
+    @include flex(column, start, start);
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+@include mobile-only-4 {
+  .countryDetails-1 {
+    @include flex(column, start, start);
+    gap: 30px;
+    width: 100%;
+  }
+}

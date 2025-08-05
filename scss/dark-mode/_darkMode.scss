@@ -1,0 +1,104 @@
+/* Dark Mode */
+.dark-mode {
+  background-color: hsl(207, 26%, 17%); /* Very-DarkBlue (Dark Mode BG) */
+  color: hsl(0, 0%, 100%); /* White text */
+}
+
+/* Font Awesome icons in dark mode */
+.dark-mode i {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Toggle button for dark mode */
+.toggle-icon {
+  font-size: 30px;
+  transition: color 0.3s;
+  color: #333; /* Light mode color */
+}
+
+body.dark-mode .toggle-icon {
+  color: $whiteColor; 
+  transition: color 0.3s;
+}
+
+#toggleTheme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%); /* White */
+  color: hsl(200, 15%, 8%); /* Dark Blue */
+  border: none;
+}
+
+#toggleTheme span{
+  padding: 10px;
+}
+
+.dark-mode .controls{
+  background-color: hsl(207, 26%, 17%);
+}
+
+header,
+.controls,
+.country-card {
+  background-color: $Very-LightGray;
+  color: hsl(200, 15%, 8%);
+}
+
+.dark-mode header,
+.dark-mode .country-card {
+  background-color: hsl(209, 23%, 22%); /* Dark Blue (Dark Mode Elements) */
+  color: hsl(0, 0%, 100%); /* White text */
+}
+
+/* Search container and input fields in dark mode */
+.dark-mode .search-container {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .search-container input {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+/* Region filter (dropdown) in dark mode */
+.dark-mode #regionFilter {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+.dark-mode #toggleTheme{
+  text-align: center, right;
+  // padding: 5px;
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+/* Make sure placeholder text is visible in dark mode */
+.dark-mode input::placeholder {
+  color: hsl(0, 0%, 80%);
+}
+
+/* Country card text in dark mode */
+.dark-mode .country-name,
+.dark-mode .country-population,
+.dark-mode .country-region,
+.dark-mode .country-capital,
+.dark-mode p{
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .backButton{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode #borderCountries a{
+  background-color:  hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
