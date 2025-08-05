@@ -10,6 +10,26 @@
   color: hsl(0, 0%, 100%); /* White text */
 }
 
+body,
+header,
+.controls,
+.country-card,
+.search-container,
+.search-container input,
+#regionFilter,
+#toggleTheme,
+.country-name,
+.country-population,
+.country-region,
+.country-capital,
+p,
+.backButton,
+#borderCountries a,
+.toggle-icon,
+.dark-mode {
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
 /* Font Awesome icons in dark mode */
 .dark-mode i {
   color: hsl(0, 0%, 100%);
@@ -18,13 +38,11 @@
 /* Toggle button for dark mode */
 .toggle-icon {
   font-size: 30px;
-  transition: color 0.3s;
   color: #333; /* Light mode color */
 }
 
 body.dark-mode .toggle-icon {
   color: hsl(0, 0%, 100%);
-  transition: color 0.3s;
 }
 
 #toggleTheme {
